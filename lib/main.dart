@@ -1,4 +1,5 @@
 import 'package:buka_usaha/screens/beranda.dart';
+import 'package:buka_usaha/screens/kelas_saya.dart';
 import 'package:buka_usaha/screens/login_screen.dart';
 import 'package:buka_usaha/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Beranda(),
+      home: const KelasSaya(),
     );
   }
 }
