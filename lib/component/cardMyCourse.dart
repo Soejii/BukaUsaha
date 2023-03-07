@@ -4,8 +4,12 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 class CardMyCourse extends StatefulWidget {
-  const CardMyCourse({super.key});
+  const CardMyCourse({
+    Key? key,
+    required this.name,
+  }) : super(key: key);
 
+  final String name;
   @override
   State<CardMyCourse> createState() => _CardMyCourseState();
 }
@@ -37,7 +41,7 @@ class _CardMyCourseState extends State<CardMyCourse> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Nama kelas 1',
+                            widget.name,
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 12,

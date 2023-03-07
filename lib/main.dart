@@ -1,6 +1,7 @@
 import 'package:buka_usaha/screens/beranda.dart';
 import 'package:buka_usaha/screens/kelas_saya.dart';
 import 'package:buka_usaha/screens/login_screen.dart';
+import 'package:buka_usaha/screens/paket_usaha.dart';
 import 'package:buka_usaha/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -16,11 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const KelasSaya(),
+      home: const PaketUsaha(),
     );
   }
 }

@@ -135,7 +135,9 @@ class _KelasSayaState extends State<KelasSaya> {
             physics: NeverScrollableScrollPhysics(),
             itemCount: 7,
             itemBuilder: (context, index) {
-              return const CardMyCourse();
+              return CardMyCourse(
+                name: 'Nama kelas $index',
+              );
             },
           )
         ],
