@@ -1,6 +1,7 @@
 import 'package:buka_usaha/screens/beranda.dart';
 import 'package:buka_usaha/screens/detail_kelas.dart';
 import 'package:buka_usaha/screens/kelas_saya.dart';
+import 'package:buka_usaha/screens/komunitas.dart';
 import 'package:buka_usaha/screens/konsultasi.dart';
 import 'package:buka_usaha/screens/login_screen.dart';
 import 'package:buka_usaha/screens/paket_usaha.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DetailKelas(),
+      home: Komunitas(),
     );
   }
 }
