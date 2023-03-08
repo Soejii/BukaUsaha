@@ -1,4 +1,5 @@
 import 'package:buka_usaha/screens/beranda.dart';
+import 'package:buka_usaha/screens/bottom_navigation.dart';
 import 'package:buka_usaha/screens/detail_kelas.dart';
 import 'package:buka_usaha/screens/kelas_saya.dart';
 import 'package:buka_usaha/screens/kirim_ide.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Permodalan(),
+      home: BottomNavigation(),
     );
   }
 }
