@@ -1,5 +1,6 @@
 import 'package:buka_usaha/screens/beranda.dart';
 import 'package:buka_usaha/screens/kelas_saya.dart';
+import 'package:buka_usaha/screens/konsultasi.dart';
 import 'package:buka_usaha/screens/login_screen.dart';
 import 'package:buka_usaha/screens/paket_usaha.dart';
 import 'package:buka_usaha/screens/profile.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const Profile(),
+      home: const KonsultasiScreen(),
     );
   }
 }
