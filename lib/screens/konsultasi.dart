@@ -18,41 +18,81 @@ class _KonsultasiScreenState extends State<KonsultasiScreen> {
       backgroundColor: Color.fromRGBO(242, 242, 242, 1),
       bottomNavigationBar: Container(
         width: double.infinity,
-        height: 70,
+        height: 104,
         color: Colors.white,
         child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          padding: const EdgeInsets.only(
+            left: 16,
+            top: 16,
+            right: 16,
+            bottom: 12,
+          ),
+          child: Column(
             children: [
-              Expanded(
-                child: Container(
-                  decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                          color: Color.fromRGBO(
-                            0,
-                            0,
-                            0,
-                            0.015,
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                              color: Color.fromRGBO(
+                                0,
+                                0,
+                                0,
+                                0.015,
+                              ),
+                              offset: Offset(0, 0))
+                        ],
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(
+                            color: Color.fromRGBO(189, 189, 189, 1), width: 1),
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                          left: 14,
+                        ),
+                        child: Center(
+                          child: TextFormField(
+                            textAlignVertical: TextAlignVertical.center,
+                            decoration: InputDecoration(
+                                hintText: 'Tulis Pesan',
+                                border: InputBorder.none),
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500,
+                              color: Color.fromRGBO(79, 79, 79, 1),
+                            ),
                           ),
-                          offset: Offset(0, 0))
-                    ],
-                    borderRadius: BorderRadius.circular(10),
-                    border: Border.all(
-                        color: Color.fromRGBO(189, 189, 189, 1), width: 1),
+                        ),
+                      ),
+                    ),
                   ),
-                ),
+                  SizedBox(
+                    width: 6,
+                  ),
+                  IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.send,
+                        color: biru,
+                      ))
+                ],
               ),
               SizedBox(
-                width: 6,
+                height: 18,
               ),
-              IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    Icons.send,
-                    color: biru,
-                  ))
+              Center(
+                child: Container(
+                  width: 135,
+                  height: 8,
+                  decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(10)),
+                ),
+              )
             ],
           ),
         ),
@@ -235,12 +275,13 @@ class _KonsultasiScreenState extends State<KonsultasiScreen> {
                   width: 84,
                   height: 50,
                   decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(20),
-                        topRight: Radius.circular(20),
-                        bottomRight: Radius.circular(20),
-                      )),
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(20),
+                      topRight: Radius.circular(20),
+                      bottomRight: Radius.circular(20),
+                    ),
+                  ),
                   child: Center(
                     child: Icon(
                       Icons.more_horiz,
