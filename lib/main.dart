@@ -5,6 +5,7 @@ import 'package:buka_usaha/screens/komunitas.dart';
 import 'package:buka_usaha/screens/konsultasi.dart';
 import 'package:buka_usaha/screens/login_screen.dart';
 import 'package:buka_usaha/screens/paket_usaha.dart';
+import 'package:buka_usaha/screens/permodalan.dart';
 import 'package:buka_usaha/screens/profile.dart';
 import 'package:buka_usaha/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Komunitas(),
+      home: Permodalan(),
     );
   }
 }
